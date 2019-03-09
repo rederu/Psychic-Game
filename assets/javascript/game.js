@@ -19,6 +19,7 @@ function resetStats() {
     numGuess = 10;
     userInput = [];
     var computerGuess = alphabet[Math.floor(Math.random() * alphabet.length)];
+    questionMarkText.textContent = "?";
 
 };
 

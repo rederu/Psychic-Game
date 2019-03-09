@@ -1,21 +1,88 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio - Psychic Game</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <!--Psychic Game js file-->
 
-    <title>Psychic Game</title>
+
 </head>
-<body>
-    <h1>Psychic Game!</h1>
-    <p>Guess what letter I'm thinking of...</p>
-    <p id="wins"></p>
-    <p id="losses"></p>
-    <p id="attempts-left"></p>
-    <p id="user-guess"></p>
 
-    
+<body class="m-0 mb-5 bg-dark">
+    <div class="container-fluid mt-0 mb-0 p-0">
+        <!--Navbar-->
+        <nav class="navbar navbar-expand-lg navbar-dark mt-0 mb-4 pt-0 pb-0 border-bottom justify-content-between">
+            <h1 class="navbar-brand "><a  class="text-white" href="https://rederu.github.io/Basic-Portfolio/portfolio.html">Mayra Cuenca</a></h1>
+        </nav>
+    </div>
+    <!--Navbar end-->
+    <div class="pl-md-2 pr-md-2">
+        <div class="container bg-white border overflow-auto">
+            <div class="row">
+                <div class="col-md-12 mt-2 mb-3 pb-2">
+                    <h1 class="mb-2 pb-2 border-bottom text-info justify-content-md-center"> Pyschic Game!</h1>
+                </div>
+            </div>
 
-    <script type="text/javascript" src="assets/javascript/game.js"></script>
+            <div class="row">
+                    <div class="col-md-12 d-flex justify-content-md-center mb-md-3">
+                        <h3 class="text-secondary">Guess what letter I'm thinking of...</h3>
+                    </div>
+                </div>
+
+            <div class="row">
+                <div class="col-md-12 d-flex justify-content-md-center mb-md-3">
+                    <h3 class="questionMark text-secondary">?</h3>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-12 d-flex justify-content-md-center mb-md-2">
+                    <h4 id="wins"></h4>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-12 d-flex justify-content-md-center mb-md-2">
+                    <h4 id="losses"></h4>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-12 d-flex justify-content-md-center mb-md-2">
+                    <h4 id="attempts-left"></h4>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-12 d-flex justify-content-md-center mb-2">
+                    <h5 id="user-guess"></h5>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    </div>
+
+
+
+
+    <!--Javascript for the game-->
+    <script type="text/javascript" src="assets/javascript/gamepsychic.js"></script>
+
+
+    <!-- Optional JavaScript for bootstrap -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+        integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+        integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+        crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+        integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+        crossorigin="anonymous"></script>
 </body>
+
 </html>
