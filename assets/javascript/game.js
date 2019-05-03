@@ -25,7 +25,6 @@ function resetStats() {
 
 //Computer selects a random letter from the alphabet array. 
 // Math.floor(Math.random() * alphabet.length) allows to get a random integer number that will be the index of the letter chosen.
-//So, computerGuess will be the letter in the alphabet array that corresponds to the random-generated index.
 var computerGuess = alphabet[Math.floor(Math.random() * alphabet.length)];
 
 document.onkeyup = function (event) {
