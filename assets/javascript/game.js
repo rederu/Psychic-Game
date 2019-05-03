@@ -18,22 +18,25 @@ var userInputText = document.getElementById("user-guess");
 function resetStats() {
     numGuess = 10;
     userInput = [];
-    var computerGuess = alphabet[Math.floor(Math.random() * alphabet.length)];
-    questionMarkText.textContent = "?";
+    computerGuess = alphabet[Math.floor(Math.random() * alphabet.length)];
+    // questionMarkText.textContent = "?";
 
 };
+
+//Computer selects a random letter from the alphabet array. 
+// Math.floor(Math.random() * alphabet.length) allows to get a random integer number that will be the index of the letter chosen.
+//So, computerGuess will be the letter in the alphabet array that corresponds to the random-generated index.
+var computerGuess = alphabet[Math.floor(Math.random() * alphabet.length)];
 
 document.onkeyup = function (event) {
     //User guess is lower case even if capslock is active in the keyboard
     var userGuess = event.key.toLowerCase();
-    //Computer selects a random letter from the alphabet array. 
-    // Math.floor(Math.random() * alphabet.length) allows to get a random integer number that will be the index of the letter chosen.
-    //So, computerGuess will be the letter in the alphabet array that corresponds to the random-generated index.
-    var computerGuess = alphabet[Math.floor(Math.random() * alphabet.length)];
+
     //This avoids to add repeated letters to the userInput array
     //IF the letter is not repeated it will be added to the userInput array
     //Also, IF the letter the user guessed is not the same as the computer chose it will decrease the attempts available for the user.
     if (userInput.indexOf(userGuess) < 0 && alphabet.indexOf(userGuess >= 0)) {
+        console.log(computerGuess);
         userInput[userInput.length] = userGuess;
         numGuess--;
     }
